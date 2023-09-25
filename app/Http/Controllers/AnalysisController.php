@@ -138,10 +138,10 @@ class AnalysisController extends Controller
         // dd($subQuery->get());
 
         // 4. 会員毎のRFMランクを計算
-        // $rfmPrms = [
-        //     14, 28, 60, 90, 7, 5, 3, 2, 300000, 200000, 100000,
-        //     30000
-        // ];
+        $rfmPrms = [
+            14, 28, 60, 90, 7, 5, 3, 2, 300000, 200000, 100000,
+            30000
+        ];
 
         $subQuery = DB::table($subQuery)
             ->selectRaw('customer_id, customer_name,
